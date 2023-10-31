@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: bkas <bkas@student.42kocaeli.com.tr>       +#+  +:+       +#+        */
+/*   By: bkas <bkas@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/25 11:01:21 by bkas              #+#    #+#             */
-/*   Updated: 2023/02/25 11:01:24 by bkas             ###   ########.tr       */
+/*   Updated: 2023/10/31 17:25:42 by bkas             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,18 @@
 
 char	*ft_strdup(char *src)
 {
-	char	*sonuc;
+	char	*res;
 	int		i;
 
 	i = 0;
-	sonuc = malloc(sizeof(*src));
-	if (sonuc == 0)
+	res = malloc(sizeof(*src));
+	if (res == 0)
 		return (0);
 	while (src[i] != '\0')
 	{
-		sonuc[i] = src[i];
+		res[i] = src[i];
 		i++;
 	}
-	sonuc[i] = '\0';
-	return (sonuc);
+	res[i] = '\0';
+	return (res);
 }
